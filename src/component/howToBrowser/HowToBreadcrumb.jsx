@@ -5,12 +5,12 @@ import { Link } from "react-router-dom";
 // Redux
 import { connect } from "react-redux";
 
-// Bootstrap
-import { Breadcrumb } from "react-bootstrap";
-
 // FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+
+// Bootstrap
+import { Breadcrumb } from "react-bootstrap";
 
 const HowToBreadcrumb = ({
     // values from mapStateToProps

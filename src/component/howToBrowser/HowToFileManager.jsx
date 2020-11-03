@@ -1,10 +1,19 @@
+// Core ReactJS
 import React from 'react';
-import { Col, Container, ListGroup, Row } from "react-bootstrap";
+import { Link } from 'react-router-dom';
+
+// Redux
+import { connect } from 'react-redux';
+
+// FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFolder } from "@fortawesome/free-solid-svg-icons";
 import { faFile } from "@fortawesome/free-regular-svg-icons";
-import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
+
+// Bootstrap
+import { Col, Container, ListGroup, Row } from "react-bootstrap";
+
+// Underscore
 import _ from "underscore"
 
 const HowToFileManager = ({
