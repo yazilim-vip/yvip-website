@@ -7,6 +7,8 @@ import { connect } from "react-redux";
 
 // Bootstrap
 import { Breadcrumb } from "react-bootstrap";
+
+// FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 
