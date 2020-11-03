@@ -1,40 +1,17 @@
-// Core ReactJS
 import React from "react";
-
-// Connected Router 
-import { push } from 'connected-react-router'
-
-// Redux
+import HowToFileManager from "./HowToFileManager";
+import { Col, Row, Alert, FormControl, ButtonGroup, ToggleButton } from "react-bootstrap";
+import ReactMarkdown from "react-markdown";
+import HowToBreadcrumb from "./HowToBreadcrumb";
 import { connect } from "react-redux";
 import { actionCreators } from "../../redux/actions";
-
-// FontAwesome
+import HOWTO_ITEM_TYPE from '../../model/HowToItemType';
+import { push } from 'connected-react-router'
+import SlidingPane from "react-sliding-pane";
+import "react-sliding-pane/dist/react-sliding-pane.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { faTh, faThList } from "@fortawesome/free-solid-svg-icons";
-
-// Bootstrap
-import { Col, Row, Alert, FormControl, ButtonGroup, ToggleButton } from "react-bootstrap";
-
-// React Sliding Pane
-import SlidingPane from "react-sliding-pane";
-import "react-sliding-pane/dist/react-sliding-pane.css";
-
-// React Markdown
-import ReactMarkdown from "react-markdown";
-
-// Underscore
-import _ from "underscore"
-
-// Project Components
-import HowToFileManager from "./HowToFileManager";
-import HowToBreadcrumb from "./HowToBreadcrumb";
-
-// Constants
-import HOWTO_ITEM_TYPE from './HowToItemType';
-
-// Module Styles
-import './HowTo.module.scss'
 
 const HowToBrowser = ({
 	// values from mapStateToProps
@@ -47,15 +24,6 @@ const HowToBrowser = ({
 	searchIndex,
 	query,
 	isToggleOn,
-
-	//TODO from breadcrumb
-	categoryNames,
-	rootCategorySelectedFlag,
-
-	//TODO from fileManager (folderName and isToggleOn removed because of duplication)
-	isHit,
-	categoryList,
-	howtoList,
 
 	// methods from props
 	onSearchResult,
@@ -128,10 +96,7 @@ const HowToBrowser = ({
 			<div>
 				<Row>
 					<Col md="7">
-						<HowToBreadcrumb
-							categoryNames={categoryNames}
-							rootCategorySelectedFlag={rootCategorySelectedFlag}
-						/>
+						<HowToBreadcrumb />
 					</Col>
 
 					<Col md="2" sm="3" className="mb-2 mb-sm-0">
@@ -176,13 +141,7 @@ const HowToBrowser = ({
 
 				<hr />
 
-				<HowToFileManager
-					folderPath={folderPath}
-					isHit={isHit}
-					categoryList={categoryList}
-					howtoList={howtoList}
-					isToggleOn={isToggleOn}
-				/>
+				<HowToFileManager />
 
 				{renderHowtoContentElement()}
 
@@ -196,14 +155,6 @@ const HowToBrowser = ({
 const mapStateToProps = (state) => {
 	const howtoReducer = state.howtoReducer
 
-	const categoryHits = howtoReducer.categoryHits
-	const howtoHits = howtoReducer.howtoHits
-	const selectedCategory = howtoReducer.selectedCategory
-
-	let categoryList = categoryHits ? _.extend({}, categoryHits) : selectedCategory.subCategoryList
-	let howtoList = howtoHits ? _.extend({}, howtoHits) : selectedCategory.howtoList
-
-
 	return {
 		folderPath: howtoReducer.folderPath,
 		selectedCategory: howtoReducer.selectedCategory,
@@ -215,18 +166,10 @@ const mapStateToProps = (state) => {
 		categoryHits: howtoReducer.categoryHits,
 		howtoHits: howtoReducer.howtoHits,
 		searchIndex: howtoReducer.searchIndex,
-		isToggleOn: howtoReducer.isToggleOn,
-
-		// ..
-		categoryNames: howtoReducer.categoryNames,
-		rootCategorySelectedFlag: howtoReducer.rootCategorySelectedFlag,
-
-		// ..
-		isHit: howtoReducer.categoryHits || howtoReducer.howtoHits,
-		categoryList: categoryList,
-		howtoList: howtoList,
+		isToggleOn: howtoReducer.isToggleOn
 	}
 }
 
 const mapDispatchToProps = { ...actionCreators, push }
+
 export default connect(mapStateToProps, mapDispatchToProps)(HowToBrowser)

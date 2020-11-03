@@ -1,25 +1,16 @@
-// Core ReactJS
 import React from "react";
 
-// Redux
+import Page from "../component/Page";
+import HowToBrowser from "../component/howto/HowToBrowser";
+import Firebase from "../util/Firebase";
 import { connect } from "react-redux";
 import { actionCreators } from "../redux/actions";
-
-// Firebase
-import Firebase from "../util/Firebase";
-
-// Bootstrap
 import { Alert, Spinner } from "react-bootstrap";
-
-// Project Components
-import Page from "../component/Page";
-
-import HowToBrowser from "../component/howTo/HowTo";
-
 class HowTo extends React.Component {
 
 	componentDidMount() {
-		const { rootCategory } = this.props;
+		const { rootCategory} = this.props;
+		
 		if (!rootCategory) {
 			this.fetchHowtoData()
 		}

@@ -1,18 +1,15 @@
-// Core ReactJS
 import React from "react";
-import { Link } from "react-router-dom";
-
-// FontAwesome
+import { Breadcrumb } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { connect } from "react-redux";
+import { Link } from "react-router-dom";
 
-// Bootstrap
-import { Breadcrumb } from "react-bootstrap";
-
-const HowToBreadcrumb = (props) => {
-
-    const categoryNames = props.categoryNames;
-    const rootCategorySelectedFlag =  props.rootCategorySelectedFlag;
+const HowToBreadcrumb = ({
+    // values from mapStateToProps
+    categoryNames,
+    rootCategorySelectedFlag
+}) => {
 
     const getLink = (index) => {
         return "/howto/" + categoryNames.slice(0, index).join("/")
@@ -38,4 +35,13 @@ const HowToBreadcrumb = (props) => {
         </Breadcrumb>
     )
 }
-export default HowToBreadcrumb
+const mapStateToProps = (state) => {
+    const howtoReducer = state.howtoReducer
+
+    return {
+        categoryNames: howtoReducer.categoryNames,
+        rootCategorySelectedFlag: howtoReducer.rootCategorySelectedFlag
+    }
+}
+
+export default connect(mapStateToProps, null)(HowToBreadcrumb)
