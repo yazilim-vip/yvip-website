@@ -13,7 +13,7 @@ import { far } from '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // Styles
-import './style/App.scss';
+import './App.scss';
 
 // Components
 import CustomNavbar from './component/CustomNavbar';
