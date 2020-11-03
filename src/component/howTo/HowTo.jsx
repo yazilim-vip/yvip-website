@@ -34,7 +34,7 @@ import HowToBreadcrumb from "./HowToBreadcrumb";
 import HOWTO_ITEM_TYPE from '../../model/HowToItemType';
 
 // Module Styles
-import './HowToBrowser.module.scss'
+import './HowTo.module.scss'
 
 const HowToBrowser = ({
 	// values from mapStateToProps

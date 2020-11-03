@@ -4,7 +4,7 @@ import { connectRouter, routerMiddleware } from 'connected-react-router'
 import { composeWithDevTools } from "redux-devtools-extension"
 import { persistStore, persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage' // defaults to localStorage for web
-import howtoReducer from './reducers'
+import howtoReducer from '../component/howTo/HowToReducer'
 
 const persistConfig = {
     key: 'root',

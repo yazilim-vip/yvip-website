@@ -13,7 +13,8 @@ import { Alert, Spinner } from "react-bootstrap";
 
 // Project Components
 import Page from "../component/Page";
-import HowToBrowser from "../component/howToBrowser/HowToBrowser";
+
+import HowToBrowser from "../component/howTo/HowTo";
 
 class HowTo extends React.Component {
 

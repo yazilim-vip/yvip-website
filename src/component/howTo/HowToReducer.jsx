@@ -1,6 +1,6 @@
 import { LOCATION_CHANGE } from 'connected-react-router';
-import { actionTypes } from './actions';
-import { parsePathAndSetContent, createSearchIndex } from '../util/HowToUtil';
+import { actionTypes } from '../../redux/actions';
+import { parsePathAndSetContent, createSearchIndex } from './HowToUtil';
 
 const howtoReducer = (state = [], action) => {
     switch (action.type) {
