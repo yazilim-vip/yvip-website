@@ -1,16 +1,24 @@
+// Core ReactJS
 import React from "react";
 
-import Page from "../component/Page";
-import HowToBrowser from "../component/howto/HowToBrowser";
-import Firebase from "../util/Firebase";
+// Redux
 import { connect } from "react-redux";
 import { actionCreators } from "../redux/actions";
+
+// Firebase
+import Firebase from "../util/Firebase";
+
+// Bootstrap
 import { Alert, Spinner } from "react-bootstrap";
+
+// Project Components
+import Page from "../component/Page";
+import HowToBrowser from "../component/howToBrowser/HowToBrowser";
+
 class HowTo extends React.Component {
 
 	componentDidMount() {
-		const { rootCategory} = this.props;
-		
+		const { rootCategory } = this.props;
 		if (!rootCategory) {
 			this.fetchHowtoData()
 		}
@@ -77,7 +85,6 @@ class HowTo extends React.Component {
 
 const mapStateToProps = (state) => {
 	const howtoReducer = state.howtoReducer
-
 	return {
 		error: howtoReducer.error,
 		isLoaded: howtoReducer.isLoaded,
@@ -86,5 +93,4 @@ const mapStateToProps = (state) => {
 }
 
 const mapDispatchToProps = actionCreators
-
 export default connect(mapStateToProps, mapDispatchToProps)(HowTo)
