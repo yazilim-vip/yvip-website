@@ -31,7 +31,7 @@ import HowToFileManager from "./HowToFileManager";
 import HowToBreadcrumb from "./HowToBreadcrumb";
 
 // Constants
-import HOWTO_ITEM_TYPE from '../../model/HowToItemType';
+import HOWTO_ITEM_TYPE from './HowToItemType';
 
 // Module Styles
 import './HowTo.module.scss'
@@ -118,7 +118,7 @@ const HowToBrowser = ({
 	const renderMainContentElement = () => {
 		if (!selectedCategory) {
 			return (
-				<Alert key={1} variant={"danger"}>.
+				<Alert key={1} variant={"danger"}>
 					Category <b>{selectedCategoryName}</b> not found in path.
 				</Alert>
 			)

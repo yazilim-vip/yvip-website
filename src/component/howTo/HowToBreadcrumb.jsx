@@ -38,16 +38,4 @@ const HowToBreadcrumb = (props) => {
         </Breadcrumb>
     )
 }
-
-// const mapStateToProps = (state) => {
-//     const howtoReducer = state.howtoReducer
-
-//     return {
-//         categoryNames: howtoReducer.categoryNames,
-//         rootCategorySelectedFlag: howtoReducer.rootCategorySelectedFlag
-//     }
-// }
-
-// export default connect(mapStateToProps, null)(HowToBreadcrumb)
-
 export default HowToBreadcrumb

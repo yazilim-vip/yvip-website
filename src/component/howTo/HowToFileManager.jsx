@@ -36,7 +36,11 @@ const HowToFileManager = (props) => {
 			return (
 				<Col xs={4} sm={3} md={3} lg={2} className="py-4 text-center" key={link}>
 					<Link to={link} className="link">
-						<FontAwesomeIcon icon={icon} className="pb-1" size="4x" color={color} />
+						<FontAwesomeIcon icon={icon}
+							className="pb-1"
+							size="4x"
+							color={color}
+						/>
 						<br />
 						{name}
 					</Link>

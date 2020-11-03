@@ -1,5 +1,5 @@
-import { SearchItem } from "../../model/SearchItem"
-import HOWTO_ITEM_TYPE from '../../model/HowToItemType';
+import { SearchItem } from "./SearchItem"
+import HOWTO_ITEM_TYPE from './HowToItemType';
 
 /**
  *

@@ -86,6 +86,7 @@ class HowTo extends React.Component {
 
 const mapStateToProps = (state) => {
 	const howtoReducer = state.howtoReducer
+
 	return {
 		error: howtoReducer.error,
 		isLoaded: howtoReducer.isLoaded,
@@ -94,4 +95,5 @@ const mapStateToProps = (state) => {
 }
 
 const mapDispatchToProps = actionCreators
+
 export default connect(mapStateToProps, mapDispatchToProps)(HowTo)
