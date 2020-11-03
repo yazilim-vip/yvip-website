@@ -1,18 +1,36 @@
+// Core ReactJS
 import React from "react";
-import HowToFileManager from "./HowToFileManager";
-import { Col, Row, Alert, FormControl, ButtonGroup, ToggleButton } from "react-bootstrap";
-import ReactMarkdown from "react-markdown";
-import HowToBreadcrumb from "./HowToBreadcrumb";
+
+// Connected Router 
+import { push } from 'connected-react-router'
+
+// Redux
 import { connect } from "react-redux";
 import { actionCreators } from "../../redux/actions";
-import HOWTO_ITEM_TYPE from '../../model/HowToItemType';
-import { push } from 'connected-react-router'
-import SlidingPane from "react-sliding-pane";
-import "react-sliding-pane/dist/react-sliding-pane.css";
+
+// FontAwesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { faTh, faThList } from "@fortawesome/free-solid-svg-icons";
 
+// Bootstrap
+import { Col, Row, Alert, FormControl, ButtonGroup, ToggleButton } from "react-bootstrap";
+
+// React Sliding Pane
+import SlidingPane from "react-sliding-pane";
+import "react-sliding-pane/dist/react-sliding-pane.css";
+
+// React Markdown
+import ReactMarkdown from "react-markdown";
+
+// Project Components
+import HowToFileManager from "./HowToFileManager";
+import HowToBreadcrumb from "./HowToBreadcrumb";
+
+// Constants
+import HOWTO_ITEM_TYPE from '../../model/HowToItemType';
+
+// Module Styles
 import './HowToBrowser.module.scss'
 
 const HowToBrowser = ({
