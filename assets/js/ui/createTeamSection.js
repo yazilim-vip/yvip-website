@@ -26,7 +26,7 @@ const createTeamMemberCard = (teamMember) => {
                                     <i class='${link.icon}'></i>
                                 </a>    
                             `;
-                          })
+                          }).join('')
                     }
                 </div>
           </div>
@@ -47,7 +47,7 @@ const createTeamSection = (teamMemberList) => {
             <div class='row justify-content-center'>
                 ${teamMemberList.map((teamMember) =>
                   createTeamMemberCard(teamMember)
-                )}
+                ).join('')}
                 
             </div>
         </div>

@@ -5,28 +5,29 @@ const createPortfolioSectionItem = ({
   links,
 }) => `
 <div class='col-lg-4 col-md-6 portfolio-item filter-app'>
-<div class='portfolio-wrap'>
-    <img src='${imageSource}' class='img-fluid' alt='' />
-    <div class='portfolio-info'>
-        <h4>${title}</h4>
-        <p>${description}</p>
-        <div class='portfolio-links'>
-            ${
-              links === undefined
-                ? ""
-                : links.map((link) => {
-                    return `
-                    <a href='${link.url}' title='${link.title}' target='_blank'>
-                        <i class='${link.icon}'></i>
-                    </a>
-                `;
-                  })
-            }
+    <div class='portfolio-wrap'>
+        <img src='${imageSource}' class='img-fluid' alt='' />
+        <div class='portfolio-info'>
+            <h4>${title}</h4>
+            <p>${description}</p>
+            <div class='portfolio-links'>
+                ${
+                  links === undefined
+                    ? ""
+                    : links
+                        .map((link) => {
+                          return `
+                        <a href='${link.url}' title='${link.title}' target='_blank'>
+                            <i class='${link.icon}'></i>
+                        </a>
+                    `;
+                        })
+                        .join("")
+                }
+            </div>
         </div>
     </div>
-</div>
-</div>
-`;
+</div>`;
 
 const createPortfolioSection = (items) => `
       <section id='portfolio' class='portfolio section-bg'>
@@ -36,8 +37,7 @@ const createPortfolioSection = (items) => `
           </div>
   
           <div class='row portfolio-container'>
-              ${items.map((each) => createPortfolioSectionItem(each))}
+              ${items.map((each) => createPortfolioSectionItem(each)).join("")}
           </div>
       </div>
-  </section>
-      `;
+  </section>`;
