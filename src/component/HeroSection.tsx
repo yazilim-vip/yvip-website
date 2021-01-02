@@ -1,5 +1,9 @@
-
-export const HeroSection = () => (
+export type HeroSectionType = {
+    title: JSX.Element | string
+    text: JSX.Element | string
+    imageSource: string
+}
+export const HeroSection = ({ title, text, imageSource }: HeroSectionType) => (
     <section id='hero'>
         <div className='hero-container'>
             <div
@@ -16,21 +20,16 @@ export const HeroSection = () => (
                     <div
                         className='carousel-item active'
                         style={{
-                            backgroundImage:
-                                "url('assets/img/slide/slide-1.jpg')"
+                            backgroundImage: `url('${imageSource}')`
                         }}
                     >
                         <div className='carousel-container'>
                             <div className='carousel-content container'>
                                 <h2 className='animate__animated animate__fadeInDown'>
-                                    Welcome to <span>Yazılım VIP</span>
+                                    {title}
                                 </h2>
                                 <p className='animate__animated animate__fadeInUp'>
-                                    To keep this platform open to everyone who
-                                    is competent and willing to share what we
-                                    call an open source world. A platform aimed
-                                    at presenting our competencies to the open
-                                    source world without waiting for a response.
+                                    {text}
                                 </p>
                             </div>
                         </div>

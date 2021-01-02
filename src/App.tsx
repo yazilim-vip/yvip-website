@@ -20,7 +20,22 @@ const App = () => {
             {/* <!-- ======= Top Bar ======= --> */}
             <TopBar mail='info@yazilim.vip' linkedinUrl='#' />
             <Header logo='Yazilim VIP' sectionList={sectionList} />
-            <HeroSection />
+            <HeroSection
+                title={
+                    <>
+                        Welcome to <span>Yazilim VIP</span>
+                    </>
+                }
+                text={
+                    <>
+                        To keep this platform open to everyone who is competent
+                        and willing to share what we call an open source world.
+                        A platform aimed at presenting our competencies to the
+                        open source world without waiting for a response.
+                    </>
+                }
+                imageSource='assets/img/slide/slide-1.jpg'
+            />
 
             <main id='main'>
                 <PortfolioSection
