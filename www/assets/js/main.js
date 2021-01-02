@@ -39,15 +39,13 @@
       with other people, queue and vote the songs, chat together, discover and share new music!
       `,
       imageSource: "assets/img/portfolio/portfolio-1.jpg",
-      links: [
-        {
-          url:
-            "https://play.google.com/store/apps/details?id=vip.yazilim.p2g.android&hl=en&gl=US",
-          title: "PlayStore",
-          icon: "fab fa-google-play",
-        },
-      ],
-      labels: ["spotify", "android", "mobile-app"]
+      link: {
+        url:
+          "https://play.google.com/store/apps/details?id=vip.yazilim.p2g.android&hl=en&gl=US",
+        title: "PlayStore",
+        icon: "fab fa-google-play",
+      },
+      labels: ["spotify", "android", "mobile-app"],
     },
     {
       title: "TimeCountdown",
@@ -58,14 +56,13 @@
         the application will count down the given time by 1 sec in an interval.
       `,
       imageSource: "assets/img/portfolio/portfolio-2.jpg",
-      links: [
-        {
-          url:
-            "https://marketplace.visualstudio.com/items?itemName=yazilim-vip.time-countdown",
-          title: "Home Page",
-          icon: "fab fa-microsoft",
-        },
-      ],
+      link: {
+        url:
+          "https://marketplace.visualstudio.com/items?itemName=yazilim-vip.time-countdown",
+        title: "Home Page",
+        icon: "fab fa-microsoft",
+      },
+      labels: ["vscode extension"],
     },
     {
       title: "Spring VIP",
@@ -75,26 +72,24 @@
         See more from documentation
       `,
       imageSource: "assets/img/portfolio/portfolio-3.jpg",
-      links: [
-        {
-          url: "https://springvip.yazilim.vip",
-          title: "Documentation",
-          icon: "fas fa-book",
-        },
-      ],
+      link: {
+        url: "https://springvip.yazilim.vip",
+        title: "Documentation",
+        icon: "fas fa-book",
+      },
+      labels: ["java", "spring boot", "library"],
     },
     {
       title: "maescript",
       description:
         "'Contains useful functions with autocomplete feauteres and comes with useful set of shell scripts",
       imageSource: "assets/img/portfolio/portfolio-3.jpg",
-      links: [
-        {
-          url: "https://yazilim-vip.github.io/maescript",
-          title: "Documentation",
-          icon: "fas fa-book",
-        },
-      ],
+      link: {
+        url: "https://yazilim-vip.github.io/maescript",
+        title: "Documentation",
+        icon: "fas fa-book",
+      },
+      labels: ["shell", "utils"],
     },
   ];
 
