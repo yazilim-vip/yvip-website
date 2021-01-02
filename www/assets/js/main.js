@@ -41,11 +41,43 @@
               title: "App3",
               description: "Last App",
               imageSource: "assets/img/portfolio/portfolio-3.jpg",
-            }
+            },
           ])}
           </main>
       `);
-  $("#app").append(createTeamSection());
+  $("#app").append(
+    createTeamSection([
+      {
+        name: "Mehmet Arif Emre Şen",
+        title: "Major Contributor",
+        imageSource:
+          "https://avatars2.githubusercontent.com/u/17517090?s=460&u=a0e442b6913f827d2e51e00abe143b2dbc375f33&v=4",
+        socialLinks: [
+          { url: "https://maemresen.github.io", icon: "icofont-web" },
+          { url: "https://www.linkedin.com/in/maemresen", icon: "icofont-linkedin" },
+        ],
+      },
+      {
+        name: "Burak Erkan",
+        title: "Major Contributor",
+        imageSource: "/assets/img/team/burak.jpeg",
+        socialLinks: [
+          { url: "https://www.linkedin.com/in/burak-erkan", icon: "icofont-linkedin" },
+        ],
+      },
+      {
+        name: 'Mustafa Arif Sisman',
+        title: 'Major Contributor',
+        imageSource: "/assets/img/team/arif.jpeg",
+        socialLinks: [
+          { url: "https://www.linkedin.com/in/mustafaarifsisman", icon: "icofont-linkedin" },
+          { url: "https://www.linkedin.com/in/burak-erkan", icon: "icofont-linkedin" },
+          { url: "https://www.linkedin.com/in/burak-erkan", icon: "icofont-linkedin" },
+          { url: "https://www.linkedin.com/in/burak-erkan", icon: "icofont-linkedin" },
+        ],
+      },
+    ])
+  );
   $("#app").append(createFooter());
 
   // Toggle .header-scrolled class to #header when page is scrolled
