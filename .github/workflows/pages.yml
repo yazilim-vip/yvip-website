@@ -1,38 +1,16 @@
 name: Websites Publisher
-on: [push]
+on:
+  push:
+    branches:
+      - "main"
 jobs:
   website_build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      # Setup .npmrc file to publish to npm
-      - uses: actions/setup-node@v1
-        with:
-          node-version: "12.x"
-          registry-url: "https://npm.pkg.github.com/yazilim-vip"
-      - name: ReactJS Build
-        run: |
-          npm install
-          npm run build
-          echo "www.yazilim.vip" > ./build/CNAME
-          cp build/index.html build/404.html
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Init Domain
+        run: echo "www.yazilim.vip" > ./www/CNAME
       - uses: actions/upload-artifact@master
         with:
-          name: build
-          path: build
-  website_publish:
-    needs: [website_build]
-    if: ${{ github.ref == 'refs/heads/main' }}
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/download-artifact@master
-        with:
-          name: build
-          path: build
-      - name: GH Pages Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          name: wwww
+          path: www
