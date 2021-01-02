@@ -26,7 +26,7 @@
       and willing to share what we call an open source world.
       A platform aimed at presenting our competencies to the
       open source world without waiting for a response.`,
-      "assets/img/slide/slide-1.jpg"
+      "assets/img/slide/birds.jpg"
     )
   );
   $("#app").append(`
@@ -66,6 +66,13 @@
               title: "maescript",
               description: "Linux Shell Helpers & Utilities",
               imageSource: "assets/img/portfolio/portfolio-3.jpg",
+              links: [
+                {
+                  url: "https://yazilim-vip.github.io/maescript",
+                  title: "Documentation",
+                  icon: "fas fa-book",
+                },
+              ],
             },
           ])}
           </main>
@@ -78,7 +85,11 @@
         imageSource:
           "https://avatars2.githubusercontent.com/u/17517090?s=460&u=a0e442b6913f827d2e51e00abe143b2dbc375f33&v=4",
         socialLinks: [
-          { url: "https://maemresen.github.io", icon: "icofont-web" },
+          {
+            url: "https://maemresen.github.io",
+            icon: "icofont-web",
+            title: "website",
+          },
           {
             url: "https://www.linkedin.com/in/maemresen",
             icon: "fab fa-linkedin",
@@ -112,6 +123,11 @@
           {
             url: "https://www.linkedin.com/in/mustafaarifsisman",
             icon: "fab fa-linkedin",
+          },
+          {
+            url: "https://arifsisman.github.io/",
+            icon: "fas fa-file",
+            title: "CV",
           },
         ],
       },
