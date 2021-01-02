@@ -1,4 +1,5 @@
 import React from 'react'
+import { Footer } from './component/Footer'
 
 import { Header } from './component/Header'
 import { TopBar } from './component/TopBar'
@@ -308,7 +309,7 @@ const App = () => {
     )
 
     return (
-        <div>
+        <>
             {/* <!-- ======= Top Bar ======= --> */}
             <TopBar mail='info@yazilim.vip' linkedinUrl='#' />
             <Header logo='Yazilim VIP' sectionList={sectionList} />
@@ -318,7 +319,13 @@ const App = () => {
                 {renderPortfolioSection()}
                 {renderTeamSection()}
             </main>
-        </div>
+
+            <Footer />
+
+            <a href='#' className='back-to-top'>
+                <i className='icofont-simple-up'></i>
+            </a>
+        </>
     )
 }
 
