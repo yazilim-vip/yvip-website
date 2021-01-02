@@ -34,31 +34,25 @@
           ${createPortfolioSection([
             {
               title: "Play2Gether",
-              description: `
-              The Play2Gether app is a music listening platform 
-              to listen to Spotify with your friends or other people. 
-              Listen to the same song at the same time with other people, 
-              queue and vote the songs, chat together, discover and share new music!
-              `,
+              description: "Music Listening Platform",
               imageSource: "assets/img/portfolio/portfolio-1.jpg",
             },
             {
               title: "TimeCountdown",
-              description: `
-              A visual studio code extension and this extension takes care of the 
-              time countdown tasks. It is very easy to use, just type the time to 
-              count down in an allowed format, and the application will count down 
-              the given time by 1 sec in an interval.
-              `,
+              description: "VS Code Extension",
               imageSource: "assets/img/portfolio/portfolio-2.jpg",
+              links: [
+                {
+                  url:
+                    "https://marketplace.visualstudio.com/items?itemName=yazilim-vip.time-countdown",
+                  title: "Home Page",
+                  icon: "fas fa-plug",
+                },
+              ],
             },
             {
               title: "Spring VIP",
-              description: `
-                A Java Spring Library that provides helpful generic and utility classes.
-                Some of features provided by library are generic CRUD Service and Rest controllers. 
-                See more from documentation
-              `,
+              description: "A Java Spring Library",
               imageSource: "assets/img/portfolio/portfolio-3.jpg",
               links: [
                 {
@@ -70,9 +64,7 @@
             },
             {
               title: "maescript",
-              description: `
-                Contains useful functions with autocomplete feauteres and comes with useful set of shell scripts
-              `,
+              description: "Linux Shell Helpers & Utilities",
               imageSource: "assets/img/portfolio/portfolio-3.jpg",
             },
           ])}
