@@ -1,6 +1,4 @@
 const createTeamMemberCard = (teamMember) => {
-  let socialLinks = "";
-
   return `
   <div class='col-xl-3 col-lg-4 col-md-6 align-self-center' data-aos='fade-up'>
       <div class='member'>
@@ -18,13 +16,17 @@ const createTeamMemberCard = (teamMember) => {
                     ${
                       teamMember.socialLinks === undefined
                         ? ""
-                        : teamMember.socialLinks.map(
-                            (link) => `
-                                <a href='${link.url}' target="_blank">
+                        : teamMember.socialLinks.map((link) => {
+                            const title =
+                              link.title === undefined
+                                ? ""
+                                : `title=${link.title}`;
+                            return `
+                                <a href='${link.url}' ${title} target="_blank">
                                     <i class='${link.icon}'></i>
                                 </a>    
-                            `
-                          )
+                            `;
+                          })
                     }
                 </div>
           </div>
