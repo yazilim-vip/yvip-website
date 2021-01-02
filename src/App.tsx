@@ -7,7 +7,7 @@ import { PortfolioSection } from './component/PortfolioSection'
 import { ScrollTop } from './component/ScrollTop'
 import { TeamSection } from './component/TeamSection'
 import { TopBar } from './component/TopBar'
-import { SectionItem } from './component/types'
+import { SectionItem } from './types'
 
 const App = () => {
     // constants

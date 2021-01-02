@@ -1,4 +1,4 @@
-import { SectionItem } from './types'
+import { SectionItem } from '../types'
 
 export type HeaderType = {
     logo: string
@@ -9,7 +9,7 @@ export const Header = ({ logo, sectionList }: HeaderType) => (
         <div className='container'>
             <div className='logo float-left'>
                 <h1 className='text-light'>
-                    <a href='/s'>
+                    <a href='/'>
                         <span>{logo}</span>
                     </a>
                 </h1>

@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "sourceRoot": "./src/",
     "target": "es5",
     "lib": [
       "dom",
