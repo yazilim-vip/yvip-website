@@ -1,3 +1,34 @@
+const INFO_MAIL = "info@yazilim.vip";
+const WEBSITE_TITLE = "Yazilim VIP";
+
+const SECTION_LIST = [
+  { id: "portfolio", name: "Portfolio" },
+  { id: "team", name: "Team" },
+];
+
+const YVIP_LINK_LIST = [
+  { url: "", icon: "fab fa-discord" },
+  { url: "https://medium.com/yazilim-vip", icon: "fab fa-docker" },
+  {
+    url: "https://hub.docker.com/orgs/yazilimvip/repositories",
+    icon: "fab fa-medium",
+  },
+  { url: "https://github.com/yazilim-vip", icon: "fab fa-github" },
+  {
+    url: "https://www.linkedin.com/company/yazilimvip",
+    icon: "fab fa-linkedin",
+  },
+];
+
+
+const CAROUSEL_TITLE = "Welcome to <span>Yazilim VIP</span>";
+const CAROUSEL_PARAGRAPH = `To keep this platform open to everyone who is competent
+  and willing to share what we call an open source world.
+  A platform aimed at presenting our competencies to the
+  open source world without waiting for a response.`;
+const CAROUSEL_IMAGE = "assets/img/slide/birds.jpg";
+
+
 const MEMBERS = [
   {
     name: "Mehmet Arif Emre Şen",
@@ -124,32 +155,3 @@ const PROJECTS = [
     labels: ["shell", "utils"],
   },
 ];
-
-const YVIP_LINK_LIST = [
-  { url: "", icon: "fab fa-discord" },
-  { url: "https://medium.com/yazilim-vip", icon: "fab fa-docker" },
-  {
-    url: "https://hub.docker.com/orgs/yazilimvip/repositories",
-    icon: "fab fa-medium",
-  },
-  { url: "https://github.com/yazilim-vip", icon: "fab fa-github" },
-  {
-    url: "https://www.linkedin.com/company/yazilimvip",
-    icon: "fab fa-linkedin",
-  },
-];
-
-const SECTION_LIST = [
-  { id: "portfolio", name: "Portfolio" },
-  { id: "team", name: "Team" },
-];
-
-const INFO_MAIL = "info@yazilim.vip";
-const WEBSITE_TITLE = "Yazilim VIP";
-
-const CAROUSEL_TITLE = "Welcome to <span>Yazilim VIP</span>";
-const CAROUSEL_PARAGRAPH = `To keep this platform open to everyone who is competent
-  and willing to share what we call an open source world.
-  A platform aimed at presenting our competencies to the
-  open source world without waiting for a response.`;
-const CAROUSEL_IMAGE = "assets/img/slide/birds.jpg";
