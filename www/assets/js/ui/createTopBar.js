@@ -1,4 +1,4 @@
-const createTopBar = (mail, linkedinUrl) => {
+const createTopBar = (mail, links) => {
   return `
       <section id='topbar' class='d-none d-lg-block'>
       <div class='container clearfix'>
@@ -7,9 +7,15 @@ const createTopBar = (mail, linkedinUrl) => {
               <a href='mailto:${mail}'>${mail}</a>
           </div>
           <div class='social-links float-right'>
-              <a href='${linkedinUrl}' target="_blank" class='linkedin'>
-                  <i class='icofont-linkedin'></i>
-              </a>
+                ${links
+                  .map(
+                    (link) => `
+                    <a href='${link.url}' target="_blank" class='linkedin'>
+                        <i class='${link.icon}'></i>
+                    </a>  
+                `
+                  )
+                  .join("")}
           </div>
       </div>
       </section>`;

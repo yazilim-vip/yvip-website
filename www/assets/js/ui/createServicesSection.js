@@ -8,7 +8,7 @@ const createSerivcesSectionItem = ({
   return `     
         <div class="col-lg-4 col-md-6 icon-box mt-4" data-aos="fade-up">
             <div class="icon">
-            <i class='${link.icon}'></i>
+              <i class='${link.icon}'></i>
             </div>
             <h4 class="title">
               <a href='${link.url}' title='${link.title}' target='_blank'>
@@ -27,7 +27,7 @@ const createSerivcesSectionItem = ({
                     .join("")
             }
             <hr />
-            <p class="description">${description}</p>
+            <p class="description">${description}</p> 
         </div>
       `;
 };

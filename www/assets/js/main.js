@@ -8,10 +8,17 @@
   "use strict";
 
   $("#app").append(
-    createTopBar(
-      "info@yazilim.vip",
-      "https://www.linkedin.com/company/yazilimvip"
-    )
+    createTopBar("info@yazilim.vip", [
+      
+      { url: '', icon: "fab fa-discord" },
+      { url: 'https://medium.com/yazilim-vip', icon: "fab fa-docker" },
+      { url: 'https://hub.docker.com/orgs/yazilimvip/repositories', icon: "fab fa-medium" },
+      { url: "https://github.com/yazilim-vip", icon: "fab fa-github" },
+      {
+        url: "https://www.linkedin.com/company/yazilimvip",
+        icon: "fab fa-linkedin",
+      },
+    ])
   );
   $("#app").append(
     createHeader("Yazilim VIP", [
@@ -43,9 +50,24 @@
         url:
           "https://play.google.com/store/apps/details?id=vip.yazilim.p2g.android&hl=en&gl=US",
         title: "PlayStore",
-        icon: "fab fa-google-play",
+        icon: "fab fa-android",
       },
       labels: ["spotify", "android", "mobile-app"],
+    },
+    {
+      title: "Spring VIP",
+      description: `
+        A Java Spring Library that provides helpful generic and utility classes. 
+        Some of features provided by library are generic CRUD Service and Rest controllers. 
+        See more from documentation
+      `,
+      imageSource: "assets/img/portfolio/portfolio-3.jpg",
+      link: {
+        url: "https://springvip.yazilim.vip",
+        title: "Documentation",
+        icon: "fab fa-java",
+      },
+      labels: ["java", "spring boot", "library"],
     },
     {
       title: "TimeCountdown",
@@ -65,21 +87,6 @@
       labels: ["vscode extension"],
     },
     {
-      title: "Spring VIP",
-      description: `
-        A Java Spring Library that provides helpful generic and utility classes. 
-        Some of features provided by library are generic CRUD Service and Rest controllers. 
-        See more from documentation
-      `,
-      imageSource: "assets/img/portfolio/portfolio-3.jpg",
-      link: {
-        url: "https://springvip.yazilim.vip",
-        title: "Documentation",
-        icon: "fas fa-book",
-      },
-      labels: ["java", "spring boot", "library"],
-    },
-    {
       title: "maescript",
       description:
         "'Contains useful functions with autocomplete feauteres and comes with useful set of shell scripts",
@@ -87,7 +94,7 @@
       link: {
         url: "https://yazilim-vip.github.io/maescript",
         title: "Documentation",
-        icon: "fas fa-book",
+        icon: "fas fa-terminal",
       },
       labels: ["shell", "utils"],
     },
