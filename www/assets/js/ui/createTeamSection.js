@@ -2,7 +2,7 @@ const createTeamMemberCard = (teamMember) => {
   let socialLinks = "";
 
   return `
-  <div class='col-xl-3 col-lg-4 col-md-6' data-aos='fade-up'>
+  <div class='col-xl-3 col-lg-4 col-md-6 align-self-center' data-aos='fade-up'>
       <div class='member'>
           <div class='pic'>
               <img
@@ -45,7 +45,7 @@ const createTeamSection = (teamMemberList) => {
                 </p>
             </div>
 
-            <div class='row'>
+            <div class='row justify-content-center'>
                 ${teamMemberList.map((teamMember) =>
                   createTeamMemberCard(teamMember)
                 )}
