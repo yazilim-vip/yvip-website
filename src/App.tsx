@@ -23,7 +23,25 @@ const App = () => {
             <HeroSection />
 
             <main id='main'>
-                <PortfolioSection />
+                <PortfolioSection
+                    items={[
+                        {
+                            title: 'App1',
+                            description: 'First App',
+                            imageSource: 'assets/img/portfolio/portfolio-1.jpg'
+                        },
+                        {
+                            title: 'App2',
+                            description: 'Second App',
+                            imageSource: 'assets/img/portfolio/portfolio-2.jpg'
+                        },
+                        {
+                            title: 'App3',
+                            description: 'Last App',
+                            imageSource: 'assets/img/portfolio/portfolio-3.jpg'
+                        }
+                    ]}
+                />
                 <TeamSection />
             </main>
 
