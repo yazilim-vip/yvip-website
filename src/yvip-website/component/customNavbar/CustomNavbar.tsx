@@ -47,6 +47,14 @@ export const CustomNavbar = () => {
                     <NavLink
                         activeClassName='active'
                         className='text-light nav-link'
+                        to='/community'
+                    >
+                        Community
+                    </NavLink>
+
+                    <NavLink
+                        activeClassName='active'
+                        className='text-light nav-link'
                         to='/portfolio'
                     >
                         Portfolio

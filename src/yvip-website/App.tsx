@@ -31,7 +31,14 @@ import 'yvip-website/App.scss'
 import { CustomNavbar } from 'yvip-website/component'
 
 // Pages
-import { Home, Portfolio, HowToPage, About, NotFound } from 'yvip-website/page'
+import {
+    Home,
+    Portfolio,
+    HowToPage,
+    About,
+    NotFound,
+    Community
+} from 'yvip-website/page'
 
 import { history } from 'yvip-website/redux'
 
@@ -56,6 +63,7 @@ const App = () => (
                             to={history.location.pathname.slice(0, -1)}
                         />
                         <Route exact path='/' component={Home} />
+                        <Route path='/community' component={Community} />
                         <Route path='/portfolio' component={Portfolio} />
                         <Route path='/howto' component={HowToPage} />
                         <Route path='/about' component={About} />
@@ -65,31 +73,6 @@ const App = () => (
                 </Row>
             </Col>
         </main>
-
-        {/* FOOTER */}
-        <footer className='text-white-50'>
-            <Navbar bg='dark'>
-                <Col
-                    md={{
-                        span: 8,
-                        offset: 2
-                    }}
-                >
-                    <Row>
-                        <Col md='12'>
-                            <span>
-                                <FontAwesomeIcon
-                                    icon={faEnvelope}
-                                    className='ml-3'
-                                />
-                            </span>
-                            <span> : info@yazilim.vip</span>
-                        </Col>
-                        <Col md='12'>© yazilim.vip All Rights Reserved</Col>
-                    </Row>
-                </Col>
-            </Navbar>
-        </footer>
     </ConnectedRouter>
 )
 
