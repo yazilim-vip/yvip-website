@@ -1,8 +1,8 @@
 const createPortfolioSectionItem = ({
+  link,
   title,
   description,
   imageSource,
-  links,
 }) => `
 <div class='col-lg-4 col-md-6 portfolio-item filter-app'>
     <div class='portfolio-wrap'>
@@ -11,19 +11,9 @@ const createPortfolioSectionItem = ({
             <h4>${title}</h4>
             <p>${description}</p>
             <div class='portfolio-links'>
-                ${
-                  links === undefined
-                    ? ""
-                    : links
-                        .map((link) => {
-                          return `
-                        <a href='${link.url}' title='${link.title}' target='_blank'>
-                            <i class='${link.icon}'></i>
-                        </a>
-                    `;
-                        })
-                        .join("")
-                }
+                <a href='${link.url}' title='${link.title}' target='_blank'>
+                    <i class='${link.icon}'></i>
+                </a>
             </div>
         </div>
     </div>

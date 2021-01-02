@@ -1,31 +1,20 @@
 const createSerivcesSectionItem = ({
+  link,
   title,
   description,
   imageSource,
-  links,
-  labels
+  labels,
 }) => {
   return `     
         <div class="col-lg-4 col-md-6 icon-box mt-4" data-aos="fade-up">
-            <div class="icon"><i class="icofont-computer"></i></div>
-            <h4 class="title">${title}</h4>
-            <h4>
-              ${
-                links === undefined
-                  ? ""
-                  : links
-                      .map((link) => {
-                        return `
-                      <a href='${link.url}' title='${link.title}' target='_blank'>
-                          <i class='${link.icon}'></i>
-                      </a>
-                  `;
-                      })
-                      .join("")
-              }
+            <div class="icon">
+            <i class='${link.icon}'></i>
+            </div>
+            <h4 class="title">
+              <a href='${link.url}' title='${link.title}' target='_blank'>
+                ${title}
+              </a>
             </h4>
-            <p class="description">${description}</p>
-
             ${
               labels === undefined
                 ? ""
@@ -37,7 +26,8 @@ const createSerivcesSectionItem = ({
                     })
                     .join("")
             }
-            
+            <hr />
+            <p class="description">${description}</p>
         </div>
       `;
 };
