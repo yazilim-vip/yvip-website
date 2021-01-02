@@ -1,4 +1,9 @@
-const createPortfolioSectionItem = (title, description, imageSource) => `
+const createPortfolioSectionItem = ({
+  title,
+  description,
+  imageSource,
+  links,
+}) => `
 <div class='col-lg-4 col-md-6 portfolio-item filter-app'>
 <div class='portfolio-wrap'>
     <img src='${imageSource}' class='img-fluid' alt='' />
@@ -6,17 +11,17 @@ const createPortfolioSectionItem = (title, description, imageSource) => `
         <h4>${title}</h4>
         <p>${description}</p>
         <div class='portfolio-links'>
-            <a
-                href="${imageSource}"
-                data-gall='portfolioGallery'
-                class='venobox'
-                title="${title}"
-            >
-                <i class='icofont-eye'></i>
-            </a>
-            <a href='portfolio-details.html' title='More Details'>
-                <i class='icofont-external-link'></i>
-            </a>
+            ${
+              links === undefined
+                ? ""
+                : links.map((link) => {
+                    return `
+                    <a href='${link.url}' title='${link.title}' target='_blank'>
+                        <i class='${link.icon}'></i>
+                    </a>
+                `;
+                  })
+            }
         </div>
     </div>
 </div>
@@ -31,13 +36,7 @@ const createPortfolioSection = (items) => `
           </div>
   
           <div class='row portfolio-container'>
-              ${items.map((each) =>
-                createPortfolioSectionItem(
-                  each.title,
-                  each.description,
-                  each.imageSource
-                )
-              )}
+              ${items.map((each) => createPortfolioSectionItem(each))}
           </div>
       </div>
   </section>
