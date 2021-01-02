@@ -20,7 +20,7 @@ const createHeader = (logo, sectionList) => {
                           <a href='#${section.id}'>${section.name}</a>
                       </li>
                   `
-                  )}
+                  ).join('')}
               </ul>
           </nav>
       </div>
