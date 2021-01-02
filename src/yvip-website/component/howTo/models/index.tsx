@@ -1,6 +1,0 @@
-export { Category } from 'yvip-website/component/howTo/models/Category'
-export { HowTo } from 'yvip-website/component/howTo/models/HowTo'
-export type { ParsedContent } from 'yvip-website/component/howTo/models/ParsedContent'
-export type { ParsedUrl } from 'yvip-website/component/howTo/models/ParsedUrl'
-export type { HowToItem } from 'yvip-website/component/howTo/models/HowToItem'
-export type { SearchResult } from 'yvip-website/component/howTo/models/SearchResult'
