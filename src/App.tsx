@@ -56,7 +56,7 @@ const App = () => {
     )
 
     const renderPortfolioSection = () => (
-        <section id='portfolio' className='portfolio section-bg'>
+        <section id={sectionPortfolio.id} className='portfolio section-bg'>
             <div className='container' data-aos='fade-up' data-aos-delay='100'>
                 <div className='section-title'>
                     <h2>Our Portfolio</h2>
@@ -158,7 +158,7 @@ const App = () => {
     )
 
     const renderTeamSection = () => (
-        <section id='team' className='team'>
+        <section id={sectionTeam.id} className='team'>
             <div className='container'>
                 <div className='section-title'>
                     <h2>Our Team</h2>
