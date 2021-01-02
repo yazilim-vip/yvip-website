@@ -40,9 +40,6 @@ const createTeamSection = (teamMemberList) => {
         <div class='container'>
             <div class='section-title'>
                 <h2>Our Team</h2>
-                <p>
-                    You are here
-                </p>
             </div>
 
             <div class='row justify-content-center'>
