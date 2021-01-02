@@ -39,6 +39,15 @@
       with other people, queue and vote the songs, chat together, discover and share new music!
       `,
       imageSource: "assets/img/portfolio/portfolio-1.jpg",
+      links: [
+        {
+          url:
+            "https://play.google.com/store/apps/details?id=vip.yazilim.p2g.android&hl=en&gl=US",
+          title: "PlayStore",
+          icon: "fab fa-google-play",
+        },
+      ],
+      labels: ["spotify", "android", "mobile-app"]
     },
     {
       title: "TimeCountdown",
@@ -54,7 +63,7 @@
           url:
             "https://marketplace.visualstudio.com/items?itemName=yazilim-vip.time-countdown",
           title: "Home Page",
-          icon: "fas fa-plug",
+          icon: "fab fa-microsoft",
         },
       ],
     },
@@ -88,7 +97,7 @@
       ],
     },
   ];
-  
+
   $("#app").append(`
           <main id='main'>
             ${createPortfolioSection(PROJECTS)}
