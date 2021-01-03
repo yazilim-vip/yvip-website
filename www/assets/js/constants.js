@@ -5,6 +5,7 @@ const SECTION_LIST = [
   { id: "about", name: "About" },
   { id: "portfolio", name: "Portfolio" },
   { id: "team", name: "Team" },
+  { id: "contact", name: "Contact" },
 ];
 
 const YVIP_LINK_LIST = [
