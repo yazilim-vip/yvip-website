@@ -26,7 +26,7 @@ const createPortfolioSectionItem = ({
 </div>`;
 
 const createPortfolioSection = (items) => `
-    <section id='portfolio' class='portfolio section-bg'>
+    <section id='team' class='portfolio section-bg'>
       <div class='container' data-aos='fade-up' data-aos-delay='100'>
           <div class='section-title'>
               <h2>Our Team</h2>
