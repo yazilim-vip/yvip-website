@@ -9,10 +9,10 @@ const SECTION_LIST = [
 
 const YVIP_LINK_LIST = [
   { url: "", icon: "fab fa-discord" },
-  { url: "https://medium.com/yazilim-vip", icon: "fab fa-docker" },
+  { url: "https://medium.com/yazilim-vip", icon: "fab fa-medium" },
   {
     url: "https://hub.docker.com/orgs/yazilimvip/repositories",
-    icon: "fab fa-medium",
+    icon: "fab fa-docker",
   },
   { url: "https://github.com/yazilim-vip", icon: "fab fa-github" },
   {
