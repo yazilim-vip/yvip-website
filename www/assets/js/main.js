@@ -7,17 +7,73 @@
 !(function ($) {
   "use strict";
 
-  $("#app").append(`
-      ${createTopBar(INFO_MAIL, YVIP_LINK_LIST)}
-      ${createHeader(WEBSITE_TITLE, SECTION_LIST)}
-      ${createHeroSection(CAROUSEL_TITLE, CAROUSEL_PARAGRAPH, CAROUSEL_IMAGE)}
-      <main id='main'>
-        ${createAboutUs()}
-        ${createSerivcesSection(PROJECTS)}
-        ${createPortfolioSection(MEMBERS)}
-      </main>
-      ${createFooter()}
-  `);
+  // Define a new component called todo-item
+  Vue.component("info-bar", {
+    data: () => {
+      return {
+        mail: INFO_MAIL,
+        links: YVIP_LINK_LIST,
+      };
+    },
+  });
+
+  Vue.component("navbar", {
+    data: () => {
+      return {
+        logo: WEBSITE_TITLE,
+        sectionList: SECTION_LIST,
+      };
+    },
+  });
+
+  Vue.component("carousel", {
+    data: () => {
+      return {};
+    },
+  });
+
+  Vue.component("section-about", {
+    data: () => {
+      return {
+        logo: WEBSITE_TITLE,
+        sectionList: SECTION_LIST,
+      };
+    },
+  });
+
+  Vue.component("section-portfolio", {
+    data: () => {
+      return {
+        items: PROJECTS,
+      };
+    },
+  });
+
+  Vue.component("section-team", {
+    data: () => {
+      return {
+        items: MEMBERS,
+      };
+    },
+  });
+
+ var app = new Vue({
+    el: "#app",
+    data: {
+    },
+  });
+
+  // $("#app").append(`
+  //     ${createTopBar(INFO_MAIL, YVIP_LINK_LIST)}
+  //     ${createHeader(WEBSITE_TITLE, SECTION_LIST)}
+  //     ${createHeroSection(CAROUSEL_TITLE, CAROUSEL_PARAGRAPH, CAROUSEL_IMAGE)}
+  //     <main id='main'>
+  //       ${createAboutUs()}
+  //       ${createSerivcesSection(PROJECTS)}
+  //       ${createPortfolioSection(MEMBERS)}
+  //     </main>
+  //     ${createFooter()}
+  // `);
 
   // Toggle .header-scrolled class to #header when page is scrolled
   $(window).scroll(function () {
