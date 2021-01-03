@@ -16,3 +16,9 @@
   background-color: #7289da !important;
   outline-color: #7289da !important;
 }
+
+@media (min-width: 992px) {
+  #about .about-content:last-child {
+    border-left: 1px solid #dedede;
+  }
+}
