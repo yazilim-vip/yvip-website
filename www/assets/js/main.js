@@ -13,7 +13,6 @@
       ${createHeroSection(CAROUSEL_TITLE, CAROUSEL_PARAGRAPH, CAROUSEL_IMAGE)}
       <main id='main'>
         ${createAboutUs()}
-        ${createPortfolioSection(PROJECTS)}
         ${createSerivcesSection(PROJECTS)}
         ${createTeamSection(MEMBERS)}
       </main>

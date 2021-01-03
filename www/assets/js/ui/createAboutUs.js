@@ -7,43 +7,54 @@ const createAboutUs = () => `
                 <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
 
                     <div class="section-title">
-                        <h2>Business</h2>
-                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+                        <h2>Enterprise Solutions</h2>
+                        <p>
+                            Research, design, implement and deliver software products that meet customers request.
+                        </p>
                     </div>
 
                     <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
                         <div class="icon"><i class="bx bx-fingerprint"></i></div>
-                        <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                        <h4 class="title"><a href="">Reliable & Robust</a></h4>
+                        <p class="description">
+                            Our xxx 
+                            Biz sizin sorunlarınızı çözecek yazılım çözümlerini sunmak için varız
+
+                        </p>
                     </div>
 
                     <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon"><i class="bx bx-gift"></i></div>
-                        <h4 class="title"><a href="">Nemo Enim</a></h4>
-                        <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                        <div class="icon"><i class="bx bx-fingerprint"></i></div>
+                        <h4 class="title"><a href="">Code Quality</a></h4>
+                        <p class="description">
+                            kaliteli ve temiz kod yazıyoruz
+                            Mümkün olduğu kadar
+                        </p>
                     </div>
 
+                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon"><i class="bx bx-fingerprint"></i></div>
+                        <h4 class="title"><a href="">Fast Delivery</a></h4>
+                        <p class="description">
+                            Mümkün olduğu kadar
+                        </p>
+                    </div>
+
+
+                    
                 </div>
 
                 <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
 
                     <div class="section-title">
                         <h2>Community</h2>
-                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+                        <p>
+                            To keep this platform open to everyone who is competent
+                            and willing to share what we call an open source world.
+                            A platform aimed at presenting our competencies to the
+                            open source world without waiting for a response.
+                        </p>
                     </div>
-
-                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon"><i class="bx bx-fingerprint"></i></div>
-                        <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                        <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-                    </div>
-
-                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon"><i class="bx bx-gift"></i></div>
-                        <h4 class="title"><a href="">Nemo Enim</a></h4>
-                        <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-                    </div>
-
                 </div>
             </div>
 
