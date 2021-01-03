@@ -14,7 +14,7 @@
       <main id='main'>
         ${createAboutUs()}
         ${createSerivcesSection(PROJECTS)}
-        ${createTeamSection(MEMBERS)}
+        ${createPortfolioSection(MEMBERS)}
       </main>
       ${createFooter()}
   `);

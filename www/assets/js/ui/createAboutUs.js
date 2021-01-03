@@ -12,7 +12,7 @@ const createAboutUs = () => `
                         </p>
                     </div>
 
-                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box" data-aos="fade-right" data-aos-delay="100">
                         <div class="icon"><i class="fas fa-cogs"></i></div>
                         <h4 class="title"><a href="">Reliable & Robust</a></h4>
                         <p class="description">
@@ -20,7 +20,7 @@ const createAboutUs = () => `
                         </p>
                     </div>
 
-                    <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box" data-aos="fade-right" data-aos-delay="300">
                         <div class="icon"><i class="fas fa-code"></i></div>
                         <h4 class="title"><a href="">Code Quality</a></h4>
                         <p class="description">
@@ -28,7 +28,7 @@ const createAboutUs = () => `
                         </p>
                     </div>
 
-                    <div class="icon-box mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box mb-4" data-aos="fade-right" data-aos-delay="500">
                         <div class="icon"><i class="fas fa-shipping-fast"></i></div>
                         <h4 class="title"><a href="">Fast Delivery</a></h4>
                         <p class="description">
@@ -36,7 +36,7 @@ const createAboutUs = () => `
                         </p>
                     </div>
                     
-                    <a href="mailto:info@yazilim.vip" class="btn btn-primary btn-block btn-lg mt-auto" style="background-color:#1c5c93 !important; ">
+                    <a href="mailto:info@yazilim.vip" class="btn btn-primary btn-block btn-lg mt-auto" style="background-color:#1c5c93 !important; " data-aos="fade-right" data-aos-delay="700">
                         <i class="mr-2 fas fa-envelope"></i>    
                         Mail Us 
                     </a>
