@@ -21,15 +21,14 @@ const YVIP_LINK_LIST = [
   },
 ];
 
-
 const CAROUSEL_TITLE = "Welcome to <span>Yazılım VIP</span>";
 const CAROUSEL_PARAGRAPH = `
   <a href="#about" class="btn text-white" style="background-color:#1c5c93 !important; ">
     Down the Rabbit Hole
   </a>
 `;
-const CAROUSEL_IMAGE = "https://img.wallpapersafari.com/desktop/1920/1080/17/53/edv91G.jpg";
-
+const CAROUSEL_IMAGE =
+  "https://img.wallpapersafari.com/desktop/1920/1080/17/53/edv91G.jpg";
 
 const MEMBERS = [
   {
@@ -103,12 +102,11 @@ const PROJECTS = [
       with your friends or other people. Listen to the same song at the same time 
       with other people, queue and vote the songs, chat together, discover and share new music!
       `,
-    imageSource: "assets/img/portfolio/portfolio-1.jpg",
     link: {
       url:
         "https://play.google.com/store/apps/details?id=vip.yazilim.p2g.android&hl=en&gl=US",
       title: "PlayStore",
-      icon: "fab fa-android",
+      icon: "fab fa-spotify",
     },
     labels: ["spotify", "android", "mobile-app"],
   },
@@ -119,7 +117,6 @@ const PROJECTS = [
         Some of features provided by library are generic CRUD Service and Rest controllers. 
         See more from documentation
       `,
-    imageSource: "assets/img/portfolio/portfolio-3.jpg",
     link: {
       url: "https://springvip.yazilim.vip",
       title: "Documentation",
@@ -135,7 +132,6 @@ const PROJECTS = [
         just type the time to count down in an allowed format, and 
         the application will count down the given time by 1 sec in an interval.
       `,
-    imageSource: "assets/img/portfolio/portfolio-2.jpg",
     link: {
       url:
         "https://marketplace.visualstudio.com/items?itemName=yazilim-vip.time-countdown",
@@ -147,13 +143,22 @@ const PROJECTS = [
   {
     title: "maescript",
     description:
-      "'Contains useful functions with autocomplete feauteres and comes with useful set of shell scripts",
-    imageSource: "assets/img/portfolio/portfolio-3.jpg",
+      "Contains useful functions with autocomplete feauteres and comes with useful set of shell scripts",
     link: {
       url: "https://yazilim-vip.github.io/maescript",
       title: "Documentation",
-      icon: "fas fa-terminal",
+      icon: "fab fa-linux",
     },
     labels: ["shell", "utils"],
+  },
+  {
+    title: "HowTo",
+    description: "Browser file manager for folders and markdown content",
+    link: {
+      url: "https://yazilim-vip.github.io/howto",
+      title: "Documentation",
+      icon: "fas fa-folder",
+    },
+    labels: ["howto", "react-js", "markdown-inspector"],
   },
 ];
