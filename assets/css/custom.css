@@ -9,3 +9,10 @@
 .carousel-item {
   background-image: url("/assets/img/slide/door.jpg");
 }
+
+.btn-discord {
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  background-color: #7289da !important;
+  outline-color: #7289da !important;
+}
