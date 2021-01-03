@@ -22,3 +22,7 @@
     border-left: 1px solid #dedede;
   }
 }
+
+.info-box i {
+  border:none !important;
+}
