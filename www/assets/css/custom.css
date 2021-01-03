@@ -1,0 +1,11 @@
+.bg-theme-blue {
+  background-color: #1c5c93 !important;
+}
+
+.text-theme-blue {
+  color: #1c5c93 !important;
+}
+
+.carousel-item {
+  background-image: url("/assets/img/slide/door.jpg");
+}
