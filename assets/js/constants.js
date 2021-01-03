@@ -27,8 +27,7 @@ const CAROUSEL_PARAGRAPH = `
     Down the Rabbit Hole
   </a>
 `;
-const CAROUSEL_IMAGE =
-  "https://img.wallpapersafari.com/desktop/1920/1080/17/53/edv91G.jpg";
+const CAROUSEL_IMAGE ="/assets/img/slide/door.jpg";
 
 const MEMBERS = [
   {
