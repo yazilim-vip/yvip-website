@@ -200,8 +200,52 @@
           
                 </div>
               </section>
-          
+        
         </section-portfolio>
+        
+        <section-team inline-template>
+            <section id='team' class='portfolio section-bg'>
+                <div class='container' data-aos='fade-up' data-aos-delay='100'>
+                    <div class='section-title'>
+                        <h2>Our Team</h2>
+                    </div>
+            
+                    <div class='row portfolio-container'>
+                        <div class='col-lg-4 col-md-6 portfolio-item filter-app' v-for="item in items">
+                            <div class='portfolio-wrap'>
+                                <img :src="item.imageSource" class='img-fluid' alt='' />
+                                <div class='portfolio-info'>
+                                    <h4>{{item.name}}</h4>
+                                    <p>{{item.title}}</p>
+                                    <div class='portfolio-links'>
+                                        <a :href='link.url' :title='link.title' target='_blank' v-for="link in item.socialLinks">
+                                            <i :class='link.icon'></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section-team>
+        <footer id='footer'>
+            <div class='container'>
+                <div class='copyright'>
+                    &copy; Copyright
+                    <strong>
+                        <span>Mamba</span>
+                    </strong>
+                    . All Rights Reserved
+                </div>
+                <div class='credits'>
+                    Designed by
+                    <a href='https://bootstrapmade.com/'>BootstrapMade</a>
+                </div>
+            </div>
+        </footer>
+
+
         <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
         <!-- Vue JS-->
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>

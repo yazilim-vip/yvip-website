@@ -15,7 +15,6 @@
         links: YVIP_LINK_LIST,
       };
     },
-    methods: {},
   });
 
   Vue.component("navbar", {
@@ -50,15 +49,17 @@
     },
   });
 
-  new Vue({
+  Vue.component("section-team", {
+    data: () => {
+      return {
+        items: MEMBERS,
+      };
+    },
+  });
+
+ var app = new Vue({
     el: "#app",
     data: {
-      message: "Hello Vue!",
-      todos: [
-        { text: "Learn JavaScript" },
-        { text: "Learn Vue" },
-        { text: "Build something awesome" },
-      ],
     },
   });
 
