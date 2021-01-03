@@ -2,6 +2,7 @@ const INFO_MAIL = "info@yazilim.vip";
 const WEBSITE_TITLE = "Yazilim VIP";
 
 const SECTION_LIST = [
+  { id: "about", name: "About" },
   { id: "portfolio", name: "Portfolio" },
   { id: "team", name: "Team" },
 ];
@@ -21,12 +22,13 @@ const YVIP_LINK_LIST = [
 ];
 
 
-const CAROUSEL_TITLE = "Welcome to <span>Yazilim VIP</span>";
-const CAROUSEL_PARAGRAPH = `To keep this platform open to everyone who is competent
-  and willing to share what we call an open source world.
-  A platform aimed at presenting our competencies to the
-  open source world without waiting for a response.`;
-const CAROUSEL_IMAGE = "assets/img/slide/birds.jpg";
+const CAROUSEL_TITLE = "Welcome to <span>Yazılım VIP</span>";
+const CAROUSEL_PARAGRAPH = `
+  <a href="#about" class="btn text-white" style="background-color:#1c5c93 !important; ">
+    Down the Rabbit Hole
+  </a>
+`;
+const CAROUSEL_IMAGE = "https://img.wallpapersafari.com/desktop/1920/1080/17/53/edv91G.jpg";
 
 
 const MEMBERS = [

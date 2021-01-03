@@ -35,7 +35,7 @@ const createSerivcesSectionItem = ({
 const createSerivcesSection = (items) => {
   return `
     
-    <section id="services" class="services">
+    <section id="portfolio" class="services">
       <div class="container">
 
         <div class="section-title">
