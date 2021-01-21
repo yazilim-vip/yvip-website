@@ -155,7 +155,7 @@ const PROJECTS = [
     title: "HowTo",
     description: "Browser file manager for folders and markdown content",
     link: {
-      url: "https://yazilim-vip.github.io/howto",
+      url: "https://howto.yazilim.vip",
       title: "Documentation",
       icon: "fas fa-folder",
     },
