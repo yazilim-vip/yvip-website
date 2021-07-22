@@ -35,7 +35,7 @@ const MEMBERS = [{
         title: "Major Contributor",
         imageSource: "https://avatars2.githubusercontent.com/u/17517090?s=460&u=a0e442b6913f827d2e51e00abe143b2dbc375f33&v=4",
         socialLinks: [{
-                url: "https://maemresen.github.io",
+                url: "https://maemresen.com",
                 icon: "icofont-web",
                 title: "website",
             },
